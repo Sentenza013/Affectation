@@ -2,9 +2,7 @@
 Affectation des options | M1
 
 ### Affectation des options :
-Ce site web a été créé pour pouvoir affecter des étudiants dans des matières choisis par les enseignants
-
-Ce projet a été développé en PHP/Javascript ainsi que HTML/CSS
+Ce site web a été créé pour pouvoir affecter des étudiants dans des matières choisis par les enseignants.
 
 ### Installation :
 Il faut tout d’abord cloner ce dépôt avec la commande : 
