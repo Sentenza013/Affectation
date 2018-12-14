@@ -15,9 +15,13 @@ Une fois le projet sur votre git, Il faut ajouter le dossier public html sur vot
 
 ### Auteurs
 •	PINATEL Anthony
+
 •	Théodore GUEGUEN
+
 •	TIMOTHIE GEULIN
+
 •	LAMBLIN Sébastien
+
 
 ### Informations 
 Ce projet nous a été délivré durant notre année de Master 1 Informatique, nous vous invitons à récupérer ce code et à ajouter de nouvelles fonctionnalités.
