@@ -14,10 +14,10 @@ Cloner ce dépôt avec la commande :
 
 Il faut ensuite ajouter le dossier public html sur votre serveur.
 
-Veuillez noter que si vous ne possédez pas de serveur fourni par Aix-MArseille Université, il faudra implémenter votre propre système de connexion et règlementer l'accès comme bon vous semble. Nous utilisons un .htaccess pour pouvoir filtrer toutes les connexions aux membres (étudiants et enseignants) d'AMU, rien d'autre.
+Veuillez noter que si vous ne possédez pas de serveur fourni par Aix-MArseille Université, il faudra implémenter votre propre système de connexion et règlementer l'accès comme bon vous semble. Nous utilisons un .htaccess pour pouvoir filtrer toutes les connexions aux membres (étudiants et enseignants) d'AMU.
 
 
 ## Informations :
-Ce projet nous a été délivré dans le cadre d'un projet d'études en Master1 Informatique, nous vous invitons à récupérer ce code et à et l'améliorer si vous le souhaitez.
+Ce projet nous a été délivré dans le cadre d'un projet d'études en Master1 Informatique, nous vous invitons à récupérer ce code et à l'améliorer si vous le souhaitez.
 
 
