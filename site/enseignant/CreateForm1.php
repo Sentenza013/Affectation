@@ -223,7 +223,7 @@ function verifierCaracteres(event){
 }
 </script>
 <div class="haut"></div>
-<p style="text-align: center;"><a href="../index.php" ><img src="logo.jpg" style="width: 650px;height: 220px;"></a></p>
+<p style="text-align: center;"><img src="logo.jpg" style="width: 650px;height: 220px;">
 <div class="login_id" style="text-align: center;">
 <p style="font-size: 25px;">Identifiant de connexion<h3><?php echo ''.$_SERVER['REMOTE_USER'].'';?>
 </div>
@@ -245,7 +245,7 @@ function verifierCaracteres(event){
         
 
         <p style=" font-size:30px;">Veuillez renseigner le nombre d'UE(s) dans cette option</p>
-        <input type="number" id="option" step="1" value="0" min="0" name="nbOpt" onFocus="javascript:this.value=''" onkeypress="verifierCaracteres(event); return false;" value="NbOpti" required/> 
+        <input type="number" id="option" step="1"  min="1" name="nbOpt" onFocus="javascript:this.value=''" onkeypress="verifierCaracteres(event); return false;" value="NbOpti" required/> 
         
         <button style="font-size:20px;" type="button" onclick="displayBoxes()">OK</button>
         <div class="popup" onmouseover="displayInfo2()" onmouseout = "displayInfo2()">?

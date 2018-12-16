@@ -1,3 +1,6 @@
+<!-- Creation des BD des options et des etudiants grace aux informations recupérées dans la page CreateForm1.php 
+Toutes les BD sont crées grace a des requetes SQL appelées avec mysqli -->
+
 <?php
 
 $servername = "$_SERVER[dbHost]";
@@ -75,8 +78,7 @@ foreach( $_POST as $cle=>$value ){
 			echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 			
 		}
-		$sql = "ALTER TABLE ".$username.".BDetu".$_POST['jour']." ADD ".$trimsqltmp1." INT(10)";
-		$sql2 = "UPDATE ".$username.".BDetu".$_POST['jour']." SET ".$trimsqltmp1." = 0";
+		$sql = 'ALTER TABLE '.$username.'.BDetu'.$_POST['jour'].' ADD '.$trimsqltmp1.' int DEFAULT 0';
 		$sqltmp2 = NULL;
 		$sqltmp1 = NULL;
 		$trimsqltmp1 = NULL;
@@ -89,15 +91,8 @@ foreach( $_POST as $cle=>$value ){
 	    	echo "Error: " . $sql . "<br>" . $conn->error;
 	    	
 		}
-		
-		if (mysqli_query($conn, $sql2)) {
-			echo "New record created successfully<br>";
-			
-		} else {
-			echo "Error: " . $sql2 . "<br>" . mysqli_error($conn);
-			
-		}
 	}
+	echo $cle." => ".$value."<br>";
 }
 
 
@@ -108,4 +103,4 @@ $conn->close();
 header('Location: AccueilEnseignant.php');
 ?>
 
-<a href="/site/enseignant/CreateForm1.php"><button type="button">Ajouter une nouvelle option</button></a>
+<!-- <a href="/site/enseignant/CreateForm1.php"><button type="button">Ajouter une nouvelle option</button></a> -->

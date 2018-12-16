@@ -9,7 +9,8 @@ foreach ($_POST as $key => $value) {
 	}
 	//i++;
 }
-// Creation d'un script en JS qui permet d'envoyer les mails d'affectations a tous les etudiants present dans la BD
+
+// Creation d'un script en JS qui permet d'envoyer le lien du site a tous les etudiants present dans la BD pour qu'il aient acces au formulaire
 echo '<body>';
 echo '<button onclick="envoiMail()">Valider envoi</button>';
 echo '<script src="https://smtpjs.com/v2/smtp.js">';
@@ -33,11 +34,10 @@ echo '<script>function envoiMail(){ ';
 echo 'var mdp = "affectopt1";';
 while($data = mysqli_fetch_array($req)) {
 	$tab[] = $data['mail'];
-	echo 'Email.sendWithAttachment("optionaffectation@gmail.com",';
+	echo 'Email.send("optionaffectation@gmail.com",';
 	echo '"'.$data['mail'].'",';
-	echo '"'.$objet.'","'.$text.'","smtp.gmail.com","optionaffectation@gmail.com",mdp,"http://theodore.gueguen.etu.perso.luminy.univ-amu.fr/Resultat_Affectation.pdf");';
+	echo '"'.$objet.'","'.$text.'","smtp.gmail.com","optionaffectation@gmail.com",mdp);';
 }
-
 echo 'document.location.href="/site/enseignant/AccueilEnseignant.php"';
 echo '}</script>';
 echo '</body>';

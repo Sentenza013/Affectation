@@ -11,7 +11,7 @@
 		<div class="haut"></div>
 			<p style="text-align: center;"><img src="logo_amu_rvb" style="width: 650px;height: 220px;"></p>
 			<div class="encadrer">
-			<form method="POST" id="form2" action="/site/enseignant/envoiMail.php"> 
+			<form method="POST" id="form2" action="/site/enseignant/envoiMail2.php"> 
 				<input type="email" name="mail" id="mail" value="mail-de-la-scolarite@mail.fr" style="width: 100%; height: 20px;">
 				<input  name="objet" id="objet" value="Objet du mail" style="width: 100%; height: 20px;">
 				<br><br>
