@@ -21,7 +21,7 @@ echo 'var mdp = "affectopt1";';
 
 echo 'Email.sendWithAttachment("optionaffectation@gmail.com",';
 echo '"'.$_POST['mail'].'",';
-echo '"'.$objet.'","'.$text.'","smtp.gmail.com","optionaffectation@gmail.com",mdp,"http://theodore.gueguen.etu.perso.luminy.univ-amu.fr/Resultat_Affectation_Scolarite.pdf");';
+echo '"'.$objet.'","'.$text.'","smtp.gmail.com","optionaffectation@gmail.com",mdp,"http://sebastien.lamblin.etu.perso.luminy.univ-amu.fr/Resultat_Affectation_Scolarite.pdf");';
 
 echo 'document.location.href="/site/enseignant/AccueilEnseignant.php"';
 echo '}</script>';

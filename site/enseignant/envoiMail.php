@@ -35,7 +35,7 @@ while($data = mysqli_fetch_array($req)) {
 	$tab[] = $data['mail'];
 	echo 'Email.sendWithAttachment("optionaffectation@gmail.com",';
 	echo '"'.$data['mail'].'",';
-	echo '"'.$objet.'","'.$text.'","smtp.gmail.com","optionaffectation@gmail.com",mdp,"http://theodore.gueguen.etu.perso.luminy.univ-amu.fr/Resultat_Affectation.pdf");';
+	echo '"'.$objet.'","'.$text.'","smtp.gmail.com","optionaffectation@gmail.com",mdp,"http://sebastien.lamblin.etu.perso.luminy.univ-amu.fr/Resultat_Affectation.pdf");';
 }
 
 echo 'document.location.href="/site/enseignant/AccueilEnseignant.php"';
